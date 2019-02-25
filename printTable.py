@@ -33,3 +33,18 @@ def print_table(tableData):
         print line
 
 print_table(tableData)
+
+#my coding
+def listPrint(l):
+	x = 0
+	for i in l:
+		string = ''
+		string1 = ','.join(i)
+		if string1 > string:
+			string = string1
+		x = len(string)
+	for i in l:
+		print(','.join(i).rjust(x), '*')
+
+list1 = [['hello, this is my name'], [' I am a good man'], ['Who is this man'], ['I love China while she do not like it very much']]
+listPrint(list1)
